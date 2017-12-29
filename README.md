@@ -1,2 +1,2 @@
-# laboratorio-java
-Java OOP
+# Laboratorio en Java
+Java POO
