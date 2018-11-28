@@ -12,14 +12,14 @@ public class Empresa extends Cliente {
 
     @Override
     public String obtIdentificacion() {
-        return nit;
+        return this.nit;
     }
     
     public String obtRepresentante() {
-        return representante;
+        return this.representante;
     }
     
-    public String cambiarRepres(String repres) {
+    public String cambiarRepres(String repres) { // Revisar
         this.representante = repres;
         return representante;
     }

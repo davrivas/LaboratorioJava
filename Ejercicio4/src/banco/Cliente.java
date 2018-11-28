@@ -9,7 +9,7 @@ public abstract class Cliente {
     }
     
     public String obtNombre() {
-        return nombre;
+        return this.nombre;
     }
     
     public abstract String obtIdentificacion();
