@@ -8,13 +8,12 @@ public class Banco {
     public Banco(String nom) {
         this.nombre = nom;
         this.clientes = new Cliente[100];
-        this.numeroDeClientes = -1;
         this.clientes[0] = new Persona("2345", "David Rivas", 12);
         this.clientes[1] = new Empresa("sddf2345", "Rivery", "234");
     }
 
     public String obtNombre() {
-        return nombre;
+        return this.nombre;
     }
     
     public void cambiarNombre(String nombre) {
@@ -22,15 +21,20 @@ public class Banco {
     }
     
     public void adCliente(Cliente clie) {
-        clientes[++numeroDeClientes] = clie;
+        this.clientes[++this.numeroDeClientes] = clie;
     }
     
     public int obtNumClientes() {
-        return numeroDeClientes;
+        if (clientes.length == 0)
+            this.numeroDeClientes = 0;
+        else
+            this.numeroDeClientes = clientes.length;
+        
+        return this.numeroDeClientes;
     }
     
     public Cliente[] obtClientes() {
-        return clientes;
+        return this.clientes;
     }
 }
 

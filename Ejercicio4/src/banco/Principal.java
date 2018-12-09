@@ -5,11 +5,16 @@ import java.util.Scanner;
 public class Principal {
 
     public static void main(String[] args) {
-        Banco banco = new Banco("del pueblo");
         Scanner scanner = new Scanner(System.in);
+        String nombreBanco;
         int menu, cont;
+        
+        System.out.println("Digite el nombre del banco");
+        nombreBanco = scanner.nextLine();
 
-        System.out.println("Bienvenido al banco" + banco.obtNombre() + "\n");
+        Banco banco = new Banco(nombreBanco);
+        
+        System.out.println("\nBienvenido al banco " + banco.obtNombre() + "\n");
 
         while (true) {
             cont = 1;
