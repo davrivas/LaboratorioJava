@@ -16,7 +16,7 @@ public class Persona extends Cliente {
     }
     
     public String obtEdad() {
-        return edad + " años";
+        return String.valueOf(this.edad);
     }
     
     public void cumplirAños() {}

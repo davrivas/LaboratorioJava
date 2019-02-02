@@ -20,8 +20,7 @@ public class Empresa extends Cliente {
     }
     
     public String cambiarRepres(String repres) {
-        this.representante = repres;
-        return representante;
+        return "";
     }
 }
 
