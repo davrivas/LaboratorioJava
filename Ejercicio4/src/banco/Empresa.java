@@ -19,7 +19,7 @@ public class Empresa extends Cliente {
         return this.representante;
     }
     
-    public String cambiarRepres(String repres) { // Revisar
+    public String cambiarRepres(String repres) {
         this.representante = repres;
         return representante;
     }
